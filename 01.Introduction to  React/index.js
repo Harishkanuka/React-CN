@@ -33,7 +33,7 @@ const jsxHeading = (
 		</ul>
 	</React.Fragment> //We can use empty without using React.Fragment
 );
-ReactDOM.createRoot(document.getElementById('root')).render(jsxHeading);
+// ReactDOM.createRoot(document.getElementById('root')).render(jsxHeading);
 
 // Creating a React Component
 function App() {
@@ -49,4 +49,30 @@ function App() {
 	);
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+// ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+//Creating a React Component using arrow functions
+// Arrow functions are implicitly returns which we don't need to pass return keyword
+const ArrowApp = () => (
+	<>
+		<h1>About React</h1>
+		<ul>
+			<li>React is javaScript library</li>
+			<li>React is composable, reusable</li>
+			<li>React Dom is most efficient than Dom</li>
+		</ul>
+	</>
+);
+// Creating one more function component wrapping them
+function Name() {
+	return (
+		<>
+			<h1>Hello From Name Component</h1>
+		</>
+	);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<>
+		<ArrowApp /> <Name />
+	</>
+);
