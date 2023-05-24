@@ -24,10 +24,29 @@ ReactDOM.createRoot(document.getElementById('root')).render(reactHeading);
 /* React Using JSX */
 
 const jsxHeading = (
-	<div>
-		<h1>Hello World JSX</h1>
-		<p>this is from jsx Para</p>
-	</div>
+	<React.Fragment>
+		<h1>About React</h1>
+		<ul>
+			<li>React is javaScript library</li>
+			<li>React is composable, reusable</li>
+			<li>React Dom is most efficient than Dom</li>
+		</ul>
+	</React.Fragment> //We can use empty without using React.Fragment
 );
-
 ReactDOM.createRoot(document.getElementById('root')).render(jsxHeading);
+
+// Creating a React Component
+function App() {
+	return (
+		<>
+			<h1>About React</h1>
+			<ul>
+				<li>React is javaScript library</li>
+				<li>React is composable, reusable</li>
+				<li>React Dom is most efficient than Dom</li>
+			</ul>
+		</>
+	);
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
