@@ -11,7 +11,7 @@ function App() {
 		<>
 			<h1>Graduates proffesions</h1>
 			<h1>
-				<table>
+				<table border="1px">
 					<thead>
 						<tr>
 							<th>ID</th>
