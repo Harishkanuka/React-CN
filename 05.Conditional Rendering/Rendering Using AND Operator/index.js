@@ -8,7 +8,7 @@
 */
 
 /* Rendering Conditions using AND(&&) Operator 
- => AND operator awlays return last truthly value and first falsly value
+ => AND operator awlays return last truthy value and first falsly value
 	Eg: "hello" && true (it returns true)
 	Eg: true && "hello" (it returns 'hello')
 	*=> By this we can conclude that AND operator returns last truth value
