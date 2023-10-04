@@ -1,2 +1,2 @@
 # React-CN
-Getting starting with React
+Getting started with React
