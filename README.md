@@ -1,3 +1,3 @@
 # React-CN
-Getting started with React
-React is a JavaScript Library
+- Getting started with React
+- React is a JavaScript Library
